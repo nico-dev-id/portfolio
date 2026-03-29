@@ -1,13 +1,9 @@
-//console.log("JavaScript berhasil terhubung!");
 
 const heroTitle = document.querySelector(".hero-title");
 const hireButton=document.querySelector(".btn-primary");
 const output=document.querySelector("#output");
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
-
-
-heroTitle.textContent="Hi, I'm Nico - Frontend Developer";
 
 heroTitle.style.color = "black";
 heroTitle.style.fontSize="40px";
