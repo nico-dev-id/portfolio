@@ -14,8 +14,8 @@ html{
 }
 
 .container{
-    max-width: 1200px; /*mengunci halaman web agar tidak melebar*/
-    margin: auto; /*agar posisinya di tengah*/
+    max-width: 1200px; 
+    margin: auto; 
     padding: 0 20px;
 }
 
@@ -39,7 +39,7 @@ section h2{
 
 /* HOVER STYLE */
 .skill-card:hover, .project-card:hover{
-    transform: translateY(-5px); /*saat kursor diarahkan ke kard naik ke atas*/
+    transform: translateY(-5px); 
 }
 
 /*====HEADER DAN NAV====*/
@@ -47,7 +47,7 @@ section h2{
 nav{
     display: flex;
     justify-content: space-between;
-    align-items: center; /*tengah dari atas bawah*/
+    align-items: center; 
     max-width: 1200px;
     margin: auto;
     padding: 20px;
@@ -79,11 +79,11 @@ nav a:hover{
 
 
 header{
-    position: sticky; /*membuat navbar menempel di saat scrol sama seperti freze di excel*/
-    top: 0; /* agar navbar nelpel di atas*/
+    position: sticky; 
+    top: 0; 
     background: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* memastikan navbar berada di atas elemen lain*/
+    z-index: 1000; 
 }
 
 /*=====HERO=====*/
@@ -172,7 +172,7 @@ header{
 /*===ABOUT===*/
 #about{
     max-width: 900px;
-    margin: 10px auto; /*jarak atas bawah 10px kiri kanan auto*/
+    margin: 10px auto; 
     text-align: center;
     padding: 50px 20px;
     background: #f9fafb;
@@ -198,10 +198,10 @@ header{
     padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: 0.3s; /* transisi saat kursor diarahkan sedikit naik*/
+    transition: 0.3s; 
 }
 
-.stat:hover{ /*saat kursor diarahkan sedikit naik*/
+.stat:hover{ 
     transform: translateY(-5px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
@@ -225,14 +225,14 @@ header{
 }
 
 .skill-card img{
-    width: 50px; /*agar image tidak keluar card*/
+    width: 50px; 
     display: block;
     transition: 0.3s;
     margin: 0 auto 15px;
 }
     
 .skill-card:hover img{
-    transform: scale(1.8); /*memperbesar gambar saat kursor di arahkan*/
+    transform: scale(1.8); 
 }
 
 /*=======PROJECT SECTION========*/
@@ -250,7 +250,7 @@ header{
     gap: 25px; 
 }
 
-.tech{ /* teknologi tech memberi jarak dari deskripsi*/
+.tech{ 
     margin-top: 10px;
     margin-bottom: 10px; 
 }
@@ -264,19 +264,19 @@ header{
 }
 
 .project-card img{
-    width: 100%; /*agar image tidak keluar card*/
+    width: 100%; 
     border-radius: 10px;
     margin-bottom: 15px;
     transition: 0.3s;
 }
 
 .project-card:hover img{
-    transform: scale(1.05); /*memperbesar gambar saat kursor di arahkan*/
+    transform: scale(1.05); 
 }
 
 .project-card{
-    overflow: hidden; /*agar gambar tidak keluar dari gambar saat di zoom*/
-    cursor: pointer; /*agar kursor berubah jadi tangan*/
+    overflow: hidden; 
+    cursor: pointer; 
 }
 
 .project-card a{
@@ -324,7 +324,7 @@ form{
     max-width: 500px;
     margin-top: 20px;
     display: flex;
-    flex-direction: column; /*membuat tampilan berjejer kebawah*/
+    flex-direction: column; 
     gap: 10px;
 }
 
@@ -392,8 +392,8 @@ footer{
   }
 
     .hero .container{
-        flex-direction: column; /*membuat tampilan kebawah, syaratnya di css utama harus display flex*/
-        text-align: center; /*membuat tampilan ketengah*/
+        flex-direction: column; 
+        text-align: center; 
     }
 
   .hero-button{
