@@ -1,0 +1,400 @@
+/*===GLOBAL===*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0; 
+}
+
+section{
+    padding: 60px 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1200px; /*mengunci halaman web agar tidak melebar*/
+    margin: auto; /*agar posisinya di tengah*/
+    padding: 0 20px;
+}
+
+/*JUDUL*/
+section h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+
+/* CARD STYLE */
+.skill-card, .project-card{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* HOVER STYLE */
+.skill-card:hover, .project-card:hover{
+    transform: translateY(-5px); /*saat kursor diarahkan ke kard naik ke atas*/
+}
+
+/*====HEADER DAN NAV====*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*tengah dari atas bawah*/
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+    padding: 7px 15px;
+}
+
+nav a:hover{
+    background-color: aqua;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+
+header{
+    position: sticky; /*membuat navbar menempel di saat scrol sama seperti freze di excel*/
+    top: 0; /* agar navbar nelpel di atas*/
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* memastikan navbar berada di atas elemen lain*/
+}
+
+/*=====HERO=====*/
+
+#hero .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-image img{
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.hero-text{
+    max-width: 600px;
+}
+
+.hero-text p{
+    max-width: 600px;
+    margin-top: 10px;
+}
+
+.hero-text h1{
+    margin-bottom: 10px;
+}
+
+.hero-button{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.hero-button a{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn-primary{
+    background-color: blue;
+    color: white;
+}
+
+.btn-secondary{
+    padding: 10px 20px;
+    border: 2px solid #4f46e5;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-left: 10px;
+    color: #4f46e5;
+}
+
+.btn-primary:hover{
+    background-color: darkblue;
+}
+
+.btn-secondary:hover{
+    background-color: blue;
+    color: white;
+}
+
+/*===ABOUT===*/
+#about{
+    max-width: 900px;
+    margin: 10px auto; /*jarak atas bawah 10px kiri kanan auto*/
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9fafb;
+}
+
+#about h2{
+    margin-bottom: 25px;
+}
+
+#about p{
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.about-stats{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat{
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s; /* transisi saat kursor diarahkan sedikit naik*/
+}
+
+.stat:hover{ /*saat kursor diarahkan sedikit naik*/
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.stat h3{
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #4f46e5;
+}
+
+
+/*=====SKILL=====*/
+.skills{
+    padding: 20px 20px;
+}
+
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.skill-card img{
+    width: 50px; /*agar image tidak keluar card*/
+    display: block;
+    transition: 0.3s;
+    margin: 0 auto 15px;
+}
+    
+.skill-card:hover img{
+    transform: scale(1.8); /*memperbesar gambar saat kursor di arahkan*/
+}
+
+/*=======PROJECT SECTION========*/
+#projects{
+    background: #f9fafb;
+}
+
+.projects{
+    padding: 40px 20px;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px; 
+}
+
+.tech{ /* teknologi tech memberi jarak dari deskripsi*/
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+.tech span{
+    background: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.project-card img{
+    width: 100%; /*agar image tidak keluar card*/
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.project-card:hover img{
+    transform: scale(1.05); /*memperbesar gambar saat kursor di arahkan*/
+}
+
+.project-card{
+    overflow: hidden; /*agar gambar tidak keluar dari gambar saat di zoom*/
+    cursor: pointer; /*agar kursor berubah jadi tangan*/
+}
+
+.project-card a{
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.project-card a:hover{
+    background-color: darkblue;
+}
+
+.project-button{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+/*=======CONTACT SECTION========*/
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact{
+    padding: 60px 20px;
+}
+
+.contact-form{
+    max-width: 500px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /*membuat tampilan berjejer kebawah*/
+    gap: 10px;
+}
+
+.contact-form input, .contact-form textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover{
+    background-color: darkblue;
+}
+
+/*=====FOOTER=====*/
+footer{
+    text-align: center;
+    padding: 30px;
+    background: #111;
+    color: white;
+    margin-top: 50px;
+}
+
+/* BURGER MENU */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/*====RESPONSIVE DESAIGN====*/
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+     }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+    .hero .container{
+        flex-direction: column; /*membuat tampilan kebawah, syaratnya di css utama harus display flex*/
+        text-align: center; /*membuat tampilan ketengah*/
+    }
+
+  .hero-button{
+    flex-direction: column;
+  }
+
+  .hero-content{
+    flex-direction: column;
+    gap: 20px;
+  }
+    
+}
