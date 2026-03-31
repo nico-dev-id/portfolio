@@ -8,11 +8,6 @@ const navLinks = document.querySelector(".nav-links");
 heroTitle.style.color = "black";
 heroTitle.style.fontSize="40px";
 
-/*tombol Hire Me di HERO*/
-hireButton.addEventListener("click",function(){
-    //1. alert
-    alert("Thanks for Visitting My Portfolio!");
-
     //2. Tambah Element
     if (output){
         const newText=document.createElement("p");
