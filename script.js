@@ -1,29 +1,47 @@
-
+//====================
+//SELECT ELEMENT
+//====================
 const heroTitle = document.querySelector(".hero-title");
-const hireButton=document.querySelector(".btn-primary");
-const output=document.querySelector("#output");
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
-heroTitle.style.color = "black";
-heroTitle.style.fontSize="40px";
-
-//BURGER MENU
-menuToggle.addEventListener("click", () => {
+//====================
+//FUNCTION
+//====================
+//toggle menu (open/close)
+function toggleMenu() {
     navLinks.classList.toggle("active");
-});
+}
 
-/*TOMBOL KONTAK SAAT DI KLIK SROL KE KONTAK*/
-const contactButton=document.querySelector(".btn-secondary");
-contactButton.addEventListener("click", function(){
-    document.querySelector("#contact").scrollIntoView({
-        behavior:"smooth"
-    })
-});
+//close menu
+function closeMenu() {
+    navLinks.classList.remove("active");
+}
 
-//tutup menu setelah klik
-document.querySelectorAll(".nav-links a").forEach(link => {
-    link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
+//Init burger menu
+function initMenu() {
+    if (!menuToggle || !navLinks) return;
+    
+        menuToggle.addEventListener("click", toggleMenu);
+}
+
+//Init Nav Links
+function initNavLinks() {
+    const links = document.querySelectorAll(".nav-links a");
+
+    if (!links.length) return;
+    
+    links.forEach(links => {
+        links.addEventListener("click", closeMenu);
     });
-});
+}
+
+//==============
+//INIT
+//==============
+initMenu();
+initNavLinks();
+
+
+
+
